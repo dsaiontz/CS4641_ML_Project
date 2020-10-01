@@ -12,6 +12,12 @@ We hope to develop an algorithm which is successful more than 99% of the time in
 
 # Methods and Dataset
 
+Our dataset will consist of images of fuel caps/fuel doors on vehicles, as well as pictures where the vehicle is far away/a fuel cap is not visible. These images will be scraped from the Internet, and then we will split them between images with a visible fuel cap and ones without a visible fuel cap.
+
+Our unsupervised portion will combine computer vision and clustering algorithms to define "shapes" visible in the imagee, or prominent features of images. These clusters will be created by identifying lines in the image with computer vision and creating clusters using these lines.
+
+Our supervised portion will utilize a trained neural network to then identify, once these clusters are generated, to identify whether or not a fuel cap is visible.
+
 # Results 
 
 # Discussion
