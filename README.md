@@ -3,6 +3,8 @@
 
 # Summary Figure
 
+![](projectSummary.jpg)
+
 # Introduction
 We plan on combining both ML and Computer Vision techniques to identify the fuel cap on a vehicle.  As autonomous vehicles become increasingly common, we expect that people will want their cars to be able refuel themselves autonomously.  To facilitate this, we seek to develop an algorithm which can identify the fuel caps on vehicles.  This algorithm could then be used to pilot a robotic arm which could handle the refueling process.  
 
