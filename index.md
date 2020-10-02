@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+# CS4641_ML_Project
 
-You can use the [editor on GitHub](https://github.com/dsaiontz/CS4641_ML_Project/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Summary Figure
 
-### Markdown
+# Introduction
+We plan on combining both ML and Computer Vision techniques to identify the fuel cap on a vehicle.  As autonomous vehicles become increasingly common, we expect that people will want their cars to be able refuel themselves autonomously.  To facilitate this, we seek to develop an algorithm which can identify the fuel caps on vehicles.  This algorithm could then be used to pilot a robotic arm which could handle the refueling process.  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+As far as we can tell, this algorithm has not been implemented.
 
-```markdown
-Syntax highlighted code block
+We hope to develop an algorithm which is successful more than 99% of the time in identifying the fuel port within a picture of a car when the fuel port is fully within the picture.  We believe that the development of such an algorithm is important step in achieving the autonomous refueling of vehicles.  
 
-# Header 1
-## Header 2
-### Header 3
+# Methods and Dataset
 
-- Bulleted
-- List
+Our dataset will consist of images of fuel caps/fuel doors on vehicles, as well as pictures where the vehicle is far away/a fuel cap is not visible. These images will be scraped from the Internet, and then we will split them between images with a visible fuel cap and ones without a visible fuel cap.
 
-1. Numbered
-2. List
+Our unsupervised portion will combine computer vision and clustering algorithms to define "shapes" visible in the imagee, or prominent features of images. These clusters will be created by identifying lines in the image with computer vision and creating clusters using these lines.
 
-**Bold** and _Italic_ and `Code` text
+Our supervised portion will utilize a trained neural network to then identify, once these clusters are generated, to identify whether or not a fuel cap is visible.
 
-[Link](url) and ![Image](src)
-```
+# Results 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+The end result will be an algorithm that takes in an image of a vehicle and outputs whether or not a fuel cap is present, and if it is, it’s location in the image. Optimally, this algorithm will perform correctly with 99% accuracy for any given image.
 
-### Jekyll Themes
+The location data will consist of information such as the pixel coordinates of the fuel cap and a modified image with this area highlighted.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dsaiontz/CS4641_ML_Project/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+# Discussion
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# References
