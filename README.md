@@ -20,6 +20,10 @@ Our supervised portion will utilize a trained neural network to then identify, o
 
 # Results 
 
+The end result will be an algorithm that takes in an image of a vehicle and outputs whether or not a fuel cap is present, and if it is, it’s location in the image. Optimally, this algorithm will perform correctly with 99% accuracy for any given image.
+
+The location data will consist of information such as the pixel coordinates of the fuel cap and a modified image with this area highlighted.
+
 # Discussion
 
 # References
