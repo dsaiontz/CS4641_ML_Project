@@ -28,4 +28,6 @@ The location data will consist of information such as the pixel coordinates of t
 
 # Discussion
 
+Hopefully, our project can be used in the future by automatic refueling or recharging stations. For these stations to operate, being able to identify the fuel cap on a vehicle is crucial. The next part after this project is building the robots and machinery that could actually facilitate an automatic refueling station that this project is designed for. This is the next step in automation of transportation, as self-driving cards are already very successful, and transportation will increasingly be fully automated within the near future.
+
 # References
