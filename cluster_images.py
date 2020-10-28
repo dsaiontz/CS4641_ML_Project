@@ -7,6 +7,7 @@ from scipy import ndimage
 from sklearn.cluster import KMeans
 import os
 from kneed import KneeLocator
+import time
 # Scaling the image pixels values within 0-1
 
 IMAGE_DATASET_DIR = './ImageDataSet'
@@ -19,6 +20,8 @@ if __name__ == "__main__":
     if not os.path.exists(OUTPUT_DATASET_DIR):
         os.makedirs(OUTPUT_DATASET_DIR)
     for filename in os.listdir(IMAGE_DATASET_DIR):
+        start = time.perf_counter()
+        print(filename)
         
         #reads image in and flattens it into 2d matrix
         img = imread(os.path.join(IMAGE_DATASET_DIR, filename))
@@ -58,3 +61,7 @@ if __name__ == "__main__":
         clustered_3d = clustered_3d
 
         imsave(os.path.join(OUTPUT_DATASET_DIR, filename), clustered_3d)
+
+        stop = time.perf_counter()
+
+        print('time: ' + str(start - stop))
