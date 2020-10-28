@@ -8,6 +8,7 @@ from sklearn.cluster import KMeans
 import os
 from kneed import KneeLocator
 import time
+from statistics import mean
 # Scaling the image pixels values within 0-1
 
 IMAGE_DATASET_DIR = './ImageDataSet'
@@ -19,6 +20,8 @@ if __name__ == "__main__":
     #make directory for clustered data, should it not exist already
     if not os.path.exists(OUTPUT_DATASET_DIR):
         os.makedirs(OUTPUT_DATASET_DIR)
+
+    time_elapsed = [] #for metrics purpose, how long it took to cluster each image
     for filename in os.listdir(IMAGE_DATASET_DIR):
         start = time.perf_counter()
         print(filename)
@@ -64,4 +67,10 @@ if __name__ == "__main__":
 
         stop = time.perf_counter()
 
-        print('time: ' + str(start - stop))
+        print('time elapsed to cluster most recent image: ' + str(stop - start) + ' seconds')
+
+        time_elapsed.append(stop - start)
+    
+    print('average time to cluster each image: ' + mean(time_elapsed) + ' seconds')
+
+    print('total time to cluster all images: ' + sum(time_elapsed) + ' seconds')
