@@ -35,3 +35,5 @@ Through this process, we correctly identify the ideal number of clusters that mi
 
 
 # Distribution of Work
+
+David Saiontz: Find and add 25 images to dataset, wrote the K-Means clustering method and added programatic determination of elbow in elbow method. Also helped in creating the single powerpoint slide for touchpoint 2.
