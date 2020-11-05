@@ -9,7 +9,7 @@ Group Members: David Saiontz, Spencer Shook, Aman Singh, Liam Gedney
 # Introduction
 
 
-# Final Methodology and Data Set
+# Methodology and Data Set
 
 Our dataset is comprised currently of 100 images of cars with the fuel dor visible. We created this dataset through scraping the internet.
 
