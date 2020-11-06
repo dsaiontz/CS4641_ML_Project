@@ -46,7 +46,7 @@ Through the process above, we used K-means clustering to cluster 100 images, eac
 
 # Next Steps
 
-Our next step is to pipe 100 more images into the dataset. We will have two datasets, one with car doors visible and one without. We will then use those datasets to train a neural network. From there, all that's left is to test it with variety options and document everything.
+Our first next step is to pipe 100 more images into the dataset. We will have two datasets, one with car doors visible and one without. We will then use those datasets to train a neural network. From there we will individually cluster each testing image and analyze it using the neural network. Finally, we will measure the neural network's success rate, which will be determined by whether it successfully detects a fuel door or not.
 
 
 # Distribution of Work
