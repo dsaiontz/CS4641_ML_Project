@@ -7,7 +7,7 @@ Group Members: David Saiontz, Spencer Shook, Aman Singh, Liam Gedney
 <img src="UnsupervisedProgressImage.PNG" alt="drawing" style="width:600px;"/>
 
 # Introduction
-
+Our project is identifying where the fuel cap on a vehicle is, which uses a combination of machine learning and computer vision. We have made great progress on it, and we are optimistic about what we will get done in the future. We collected 100 images of fuel caps on cars, and used K-means clustering to roughly estimate where a fuel cap may be.
 
 # Methodology and Data Set
 
@@ -57,3 +57,4 @@ David Saiontz: Find and add 25 images to dataset, wrote the K-Means clustering m
 Spencer Shook: Found 25 images for the dataset, came up with initial project idea and helped to define project goals and methods, assisted in creating powerpoint fortouchpoint 2, presented progress for touchpoint 2.  
 
 Liam Gedney: Found 25 images for the dataset, wrote results section of readme, wrote next steps section of midterm report.
+
