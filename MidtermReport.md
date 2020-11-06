@@ -46,11 +46,7 @@ Through the process above, we used K-means clustering to cluster 100 images, eac
 
 # Next Steps
 
-<<<<<<< Updated upstream
 Our next step is to pipe 100 more images into the dataset. We will have two datasets, one with car doors visible and one without. We will then use those datasets to train a neural network. From there, all that's left is to test it with variety options and document everything.
-=======
-The next step is to pipe 100 more images into the dataset. We will have two datasets, one with fuel doors visible and one without. We will then use those datasets to train a neural network. From there, all that's left is testing and documentation of everything.
->>>>>>> Stashed changes
 
 
 # Distribution of Work
@@ -59,8 +55,7 @@ David Saiontz: Find and add 25 images to dataset, wrote the K-Means clustering m
 
 Spencer Shook: Found 25 images for the dataset, came up with initial project idea and helped to define project goals and methods, assisted in creating powerpoint fortouchpoint 2, presented progress for touchpoint 2.  
 
-<<<<<<< Updated upstream
+
 Liam Gedney: Found 25 images for the dataset, wrote results section of readme, wrote next steps section of midterm report.
-=======
-Liam Gedney: Found 25 images for the dataset, Wrote results section of readme, wrote next steps section of Midterm report.
->>>>>>> Stashed changes
+
+
