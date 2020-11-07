@@ -57,3 +57,4 @@ Spencer Shook: Found 25 images for the dataset, came up with initial project ide
 
 Liam Gedney: Found 25 images for the dataset, wrote results section of readme, wrote next steps section of midterm report.
 
+Aman Singh: Find and add 25 images to the dataset and created the video presentation for touchpoint 2. Also wrote introduction section of midterm report.
