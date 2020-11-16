@@ -11,9 +11,9 @@ import time
 from statistics import mean
 # Scaling the image pixels values within 0-1
 
-IMAGE_DATASET_DIR = './ImageDataSet'
+IMAGE_DATASET_DIR = './NoFuelCapTrainingSet'
 
-OUTPUT_DATASET_DIR = './ClusteredData'
+OUTPUT_DATASET_DIR = './ClusteredNoFuelCapData'
 
 if __name__ == "__main__":
 
@@ -71,6 +71,6 @@ if __name__ == "__main__":
 
         time_elapsed.append(stop - start)
     
-    print('average time to cluster each image: ' + mean(time_elapsed) + ' seconds')
+    print('average time to cluster each image: ' + str(mean(time_elapsed)) + ' seconds')
 
-    print('total time to cluster all images: ' + sum(time_elapsed) + ' seconds')
+    print('total time to cluster all images: ' + str(sum(time_elapsed)) + ' seconds')
