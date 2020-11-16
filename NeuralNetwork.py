@@ -26,3 +26,8 @@ if __name__ == "__main__":
         
         #reads image in and flattens it into 2d matrix
         img = imread(os.path.join(IMAGE_DATASET_DIR, filename))
+
+
+
+    #
+    trainingDataset = tf.keras.preprocessing.image_dataset_from_directory()
