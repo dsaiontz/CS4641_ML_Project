@@ -6,7 +6,8 @@ import tensorflow as tf
 
 from tensorflow import keras;
 from tensorflow.keras import layers;
-from tensorflow.models import Sequential;
+from tensorflow.keras.models import Sequential;
+
 import time
 from skimage.io import imread, imsave
 
@@ -32,7 +33,7 @@ if __name__ == "__main__":
     )
 
     validationDataset = tf.keras.preprocessing.image_dataset_from_directory(
-        data_dir,
+        IMAGE_DATASET_DIR,
         validation_split=0.2,
         subset="validation",
         seed=123,
@@ -54,10 +55,10 @@ if __name__ == "__main__":
         layers.experimental.preprocessing.Rescaling(1./255, input_shape=(img_height, img_width, 3)),
         layers.Conv2D(16, 3, padding='same', activation='relu'),
         layers.MaxPooling2D(),
-        layers.Conv2D(32, 3, padding='same', activation='relu'),
-        layers.MaxPooling2D(),
-        layers.Conv2D(64, 3, padding='same', activation='relu'),
-        layers.MaxPooling2D(),
+        # layers.Conv2D(32, 3, padding='same', activation='relu'),
+        # layers.MaxPooling2D(),
+        # layers.Conv2D(64, 3, padding='same', activation='relu'),
+        # layers.MaxPooling2D(),
         layers.Flatten(),
         layers.Dense(128, activation='relu'),
         layers.Dense(num_classes)
@@ -72,7 +73,7 @@ if __name__ == "__main__":
     model.summary()
 
     # train the model
-    epochs = 10;
+    epochs = 25;
     history = model.fit(
         trainingDataset,
         validation_data = validationDataset,
