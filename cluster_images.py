@@ -11,9 +11,9 @@ import time
 from statistics import mean
 # Scaling the image pixels values within 0-1
 
-IMAGE_DATASET_DIR = './NoFuelCapTrainingSet'
+IMAGE_DATASET_DIR = './StanfordImages/NoFuelCap_stanford'
 
-OUTPUT_DATASET_DIR = './ClusteredNoFuelCapData'
+OUTPUT_DATASET_DIR = './ClusteredImages/NoFuelCap'
 
 if __name__ == "__main__":
 
@@ -50,8 +50,8 @@ if __name__ == "__main__":
         #plotting for saving elbow method plot for each image
         plotted, ax = plt.subplots()
 
-        ax.plot(range(2, 11), inertias)
-        plotted.savefig(os.path.join(OUTPUT_DATASET_DIR, filename + '_elbow_plot_' + str(elbow) + '.jpg'))
+        # ax.plot(range(2, 11), inertias)
+        # plotted.savefig(os.path.join(OUTPUT_DATASET_DIR, filename + '_elbow_plot_' + str(elbow) + '.jpg'))
 
 
         print('elbow: ' + str(elbow))
