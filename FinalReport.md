@@ -4,9 +4,9 @@ Group Members: David Saiontz, Spencer Shook, Aman Singh
 
 # Summary Figure
 
-# Introduction
+<img src="FinalReportSummaryFigure.png" alt="drawing" style="width:600px;"/>
 
-Our project is identifying where the fuel cap on a vehicle is, which uses a combination of machine learning and computer vision. We have made great progress on it, and we are optimistic about what we will get done in the future. We collected 100 images of fuel caps on cars, and used K-means clustering to narrow down the data in the picture and eliminate irrelevant data.
+# Introduction
 
 # Methodology and Data Set
 
@@ -16,7 +16,7 @@ Our project is identifying where the fuel cap on a vehicle is, which uses a comb
 
 <img src="UnsupervisedProgressImage.PNG" alt="drawing" style="width:600px;"/>
 
-With opur images, we performed K-Means clustering on the images by performing the following steps:
+With our images, we performed K-Means clustering on the images by performing the following steps:
 
 <ol>
 <li>Take a given image from the dataset.</li>
@@ -34,28 +34,18 @@ Through this process, we can identify the ideal number of clusters that minimize
 ## Supervised Learning
 
 # Results 
-Through the process above, we used K-means clustering to cluster 100 images, each one containing a car's fuel port.  We found that over 90% of these images were optimally clustered using either three or four clusters and 100% of the images were optimally clustered using three to five clusters.  We were initially surprised that all of the images were optimally clustered using three to five clusters, but upon review, we noticed that most of our images are close-up images of cars with only a few prevalent colors, so it makes sense that only a few clusters are needed.  In a majority of the images, there is a noticeable effect from environmental lighting which we were worried would throw off our classification.  When we compare the images before and after clustering, the effects of environmental seems to be reduced in nearly all of the imgages, but especially those images which were optimally clustered with three clusters.  We believe that we will be more accurate in classifying these images now that the clustering process has reduced the effects of environmental lighting and other noise within the images.  
-
-<img src="ImageDataSet/davidImage16.jpg" alt="drawing" style="width:200px;"/>
-<img src="ClusteredData/davidImage16.jpg" alt="drawing" style="width:200px;"/>
-<img src="ClusteredData/davidImage16.jpg_elbow_plot_5.jpg" alt="drawing" style="width:200px;"/>
-<br/>
-<img src="ImageDataSet/davidImage22.jpg" alt="drawing" style="width:200px;"/>
-<img src="ClusteredData/davidImage22.jpg" alt="drawing" style="width:200px;"/>
-<img src="ClusteredData\davidImage22.jpg_elbow_plot_4.jpg" alt="drawing" style="width:200px;"/>
-<br/>
-<img src="ImageDataSet/fuelcap14.jpg" alt="drawing" style="width:200px;" height="150px"/>
-<img src="ClusteredData/fuelcap14.jpg" alt="drawing" style="width:200px;" height="150px"/>
-<img src="ClusteredData\fuelcap14.jpg_elbow_plot_4.jpg" alt="drawing" style="width:200px;" height="150px"/>
 
 # Discussion
 
+During testing with the clustered images, we noticed that our clustering algorithm would, at times, lose some of the clarity of the fuel caps. As a result, we believe that this caused some issues with our neural network, as it would make the images harder to successfully classify.
+
+Meanwhile, when testing with the unclustered images, because our dataset was only ~400 images, and the images had significantly more detail visible, we believe that our neural network was overfitting to our data.
+
+To remedy each of these issues, we believe that we would need to know the specific angle the vehicle would be, so as to minimize any extra noise in the images, and then use clustering to further reduce the noise, and finally run the neural network on the image to determine if the image contains a fuel cap. This would not only increase the success rate of the neural network, but would also require significantly fewer images to train the neural network, since it would be trained to work with a camera that is at a particular angle, rather than a camera that could be at any angle.
+
+That being said, with unclusterd images, we were still reaching a 75% successful identification rate on average, which is a good baseline to continue work on the dataset and neural network.
+
+Next steps for the project would include either gathering significantly more images and manually classifying them, as there are no datasets of vehicles with labels for if the fuel cap is visible or not. In addition, more testing with the number of layers and type of activation function for the neural network would be necessary with a larger dataset. Finally, the neural network would need to be saved and deployed, along with a dynamic clustering algorithm for a live camera feed would be necessary to utilize our project at an autonomous gas station.
+
 # References
 
-# Distribution of Work
-
-David Saiontz: 
-
-Spencer Shook: 
-
-Aman Singh: 
