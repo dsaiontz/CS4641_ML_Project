@@ -8,9 +8,8 @@ Group Members: David Saiontz, Spencer Shook, Aman Singh
 
 # Introduction
 
-# Methodology and Data Set
-
 ## Data Set
+Spencer
 
 ## Unsupervised Learning
 
@@ -32,8 +31,10 @@ With our images, we performed K-Means clustering on the images by performing the
 Through this process, we can identify the ideal number of clusters that minimizes extra noise while maximizing the clarity of the fuel door.
 
 ## Supervised Learning
+Spencer
 
-# Results 
+# Results
+Aman
 
 # Discussion
 
@@ -48,4 +49,5 @@ That being said, with unclusterd images, we were still reaching a 75% successful
 Next steps for the project would include either gathering significantly more images and manually classifying them, as there are no datasets of vehicles with labels for if the fuel cap is visible or not. In addition, more testing with the number of layers and type of activation function for the neural network would be necessary with a larger dataset. Finally, the neural network would need to be saved and deployed, along with a dynamic clustering algorithm for a live camera feed would be necessary to utilize our project at an autonomous gas station.
 
 # References
+Spencer
 
