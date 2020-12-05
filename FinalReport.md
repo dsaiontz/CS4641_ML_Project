@@ -7,7 +7,7 @@ Group Members: David Saiontz, Spencer Shook, Aman Singh
 <img src="FinalReportSummaryFigure.png" alt="drawing" style="width:600px;"/>
 
 # Introduction
-Aman
+Throughout the course of this semester, we have attempting to dynamically identify fuel caps on vehicles. To approach this, we used unsupervised learning in the form of K-means clustering and supervised learning in the form of neural networks. When attempting supervised learning, we ran into two main problems: adjusting the parameters to balance the line between accurately identifying the fuel cap and not overfitting the model. We also realized that our initial dataset was not as up to par as it should have been. We tried to add more images of fuel caps, and cars without the fuel caps, but eventually we pulled an existing dataset and manually classified those. Our goal was to reach a sufficient accuracy in identifying whether a fuel cap was visible, and if it was, where it was located in the given image.
 
 ## Data Set
 Initially our dataset consisted of 200 images of cars where half of the images contained the car's fuel door and the other half did not contain the car's fuel door.  These images were pulled from Google Images by team members. We aimed to have a wide variety of car images which could be representative of all possible pictures of cars.  The images were from a variety of angles, of different sides of the cars, and from different distances from the cars.  
@@ -43,7 +43,7 @@ We ran our model on both the clustered and unclustered images of our dataset and
 
 
 # Results
-Aman
+We realized that our clustering reduces the clarity of the fuel cap, so we decided to simply train the neural network on unclustered images. We managed to get 75% accuracy on training unclustered images.
 
 # Discussion
 
