@@ -51,6 +51,8 @@ In training our neural network on our unclustered dataset, we reached 95% traini
 
 With our clustered dataset, we were only able to reach a maximum accuracy of 75% with the optimal settings described above. When we varied the number of layers, number of nodes, and activation functions, the validation accuracy fluctuated between 55% and 70%.   
 
+<img src="NNresults.png" alt="drawing" style="width:600px;"/>
+
 # Discussion
 
 During testing with the clustered images, we noticed that our clustering algorithm would, at times, lose some of the clarity of the fuel doors. As a result, we believe that this caused some issues with our neural network, as it would make the images harder to successfully classify.
