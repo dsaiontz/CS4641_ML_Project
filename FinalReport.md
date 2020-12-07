@@ -34,7 +34,6 @@ With our images, we performed K-Means clustering on the images by performing the
 Through this process, we can identify the ideal number of clusters that minimizes extra noise while maximizing the clarity of the fuel door.
 
 ## Supervised Learning
-Spencer
 Constructed neural network using Tensorflow
 We constructed a neural network to classify the images in our dataset on whether a fuel door is present in the image.  To do this, we leveraged Tensorflow to construct our model and also to handle splitting our data into training and validation sets.   
 
