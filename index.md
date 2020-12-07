@@ -62,7 +62,9 @@ Next steps for the project would include either gathering significantly more ima
 
 # References
 https://ai.stanford.edu/~jkrause/cars/car_dataset.html - Stanford car image dataset
+
 https://www.tensorflow.org/tutorials/images/classification - Tutorial on TensorFlow
-https://towardsdatascience.com/cluster-based-image-segmentation-python-80a295f4f3a2
+
+https://towardsdatascience.com/cluster-based-image-segmentation-python-80a295f4f3a2 - Clustering images using K-Means
 
 
