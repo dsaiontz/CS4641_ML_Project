@@ -34,11 +34,9 @@ With our images, we performed K-Means clustering on the images by performing the
 Through this process, we can identify the ideal number of clusters that minimizes extra noise while maximizing the clarity of the fuel door.
 
 ## Supervised Learning
-Constructed neural network using Tensorflow
-We constructed a neural network to classify the images in our dataset on whether a fuel door is present in the image.  To do this, we leveraged Tensorflow to construct our model and also to handle splitting our data into training and validation sets.   
+We constructed a neural network using Tensorflow. We constructed a neural network to classify the images in our dataset on whether a fuel door is present in the image.  To do this, we leveraged Tensorflow to construct our model and also to handle splitting our data into training and validation sets.   
 
-Tested using both clustered and unclustered images
-We ran our model on both the clustered and unclustered images of our dataset and compared the outcome.  We graphed the accuracy and (loss?) over the epochs.  We tested our model with various numbers of epochs between 10 and 1000, but we usually used 100 epochs.  We tried varying the number of layers in our model between 1 and 10 to find a balance between accuracy and model overfitting.  Lastly, we tried using different activation functions to improve the model's accuracy.  We used 3 layers in most of our testing where the first layer used a sigmoid activation function and the other 2 layers used ReLU.  
+Tested using both clustered and unclustered images. We ran our model on both the clustered and unclustered images of our dataset and compared the outcome.  We graphed the accuracy and (loss?) over the epochs.  We tested our model with various numbers of epochs between 10 and 1000, but we usually used 100 epochs.  We tried varying the number of layers in our model between 1 and 10 to find a balance between accuracy and model overfitting.  Lastly, we tried using different activation functions to improve the model's accuracy.  We used 3 layers in most of our testing where the first layer used a sigmoid activation function and the other 2 layers used ReLU.  
 
 Our neural network reached its highest accuracy levels when it was run with more than 100 epochs and 3 layers of 16, 32, and 64 nodes and using sigmoid, ReLU and ReLU activation functions respectively.  
 
